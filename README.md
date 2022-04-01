@@ -3,8 +3,9 @@
 This library provides simple way to interact with Ethereum ERC20 token.  
 By default, supports all ERC20 Standard functions (like balanceOf, transfer, transferFrom, approve, allowance, decimal, name, ...) also can be extends to support other contracts as well.
 
+## 基于lessmore92/php-erc20库做了些修改
 ## Installation
-`composer require lessmore92/php-erc20`
+`composer require cqtop/eth-nano-erc20`
 
 ## Usage
 There are two ways to use:
