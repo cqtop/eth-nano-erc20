@@ -20,7 +20,7 @@ abstract class StandardERC20Token extends ERC20
     protected $gasLimits = [
         'approve'      => 50000,
         'transfer'     => 50000,
-        'transferFrom' => 50000,
+        'transferFrom' => 100000,
         'default'      => 50000,
     ];
 
@@ -163,7 +163,8 @@ abstract class StandardERC20Token extends ERC20
         {
             $gasPrice = $this->getSafeGasPrice();
         }
-
+        $gasLimit = Number::toHex($gasLimit);
+        $gasPrice = Number::toHex($gasPrice);
         return (new TransactionBuilder())
             ->setEth($this->getEth())
             ->to($this->contractAddress)
