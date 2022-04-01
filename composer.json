@@ -1,5 +1,5 @@
 {
-  "name": "lessmore92/php-erc20",
+  "name": "cqtop/eth-nano-erc20",
   "description": "This library provides simple way to interact with Ethereum ERC20 token.",
   "type": "library",
   "authors": [
